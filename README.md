@@ -4,10 +4,10 @@
 
 ## Features
 
-- :nail_care: **Stylized Defaults** \_Beautiful presentation of your content powered by [mui](https://www.npmjs.com/package/@material-ui/core)*
-- :wrench: **Easily Customizable** _Exact same API as [markdown-to-jsx](https://www.npmjs.com/package/markdown-to-jsx)_
+- :nail_care: **Stylized Defaults** - _Beautiful presentation of your content powered by [mui](https://www.npmjs.com/package/@material-ui/core)_
+- :wrench: **Easily Customizable** - _Exact same API as [markdown-to-jsx](https://www.npmjs.com/package/markdown-to-jsx)_
 - :art: **Syntax Highlighting** - _Powered by [react-syntax-highlighter](https://www.npmjs.com/package/react-syntax-highlighter)_
-- :book: **Semantic** _Meaningful html tags representing your content_
+- :book: **Semantic** - _Meaningful html tags representing your content_
 
 ## Installation
 
