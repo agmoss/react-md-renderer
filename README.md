@@ -14,13 +14,13 @@
 #### With yarn
 
 ```sh
-yarn add react-hot-toast
+yarn add react-md-renderer
 ```
 
 #### With NPM
 
 ```sh
-npm install react-hot-toast
+npm install react-md-renderer
 ```
 
 ## Getting Started
