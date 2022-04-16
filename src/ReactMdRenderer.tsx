@@ -4,7 +4,7 @@ import ReactMarkdown, { MarkdownToJSX } from 'markdown-to-jsx';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import React from 'react';
 
-const options = {
+const defaultOpts = {
   overrides: {
     h1: {
       component: Typography,
@@ -65,8 +65,25 @@ const options = {
   forceBlock: true,
 };
 
-export const ReactMdRenderer = <P extends []>(md: string, ...props: P) => (
-  <ReactMarkdown options={options as MarkdownToJSX.Options} {...props}>
-    {md}
-  </ReactMarkdown>
-);
+type ReactMdRendererOpts = React.ComponentProps<typeof ReactMarkdown>;
+
+/**
+ * @name ReactMdRenderer
+ * @description Render markdown string with stylized defaults. The default styles can be overridden with a custom options param
+ * @param opts ReactMdRendererOpts
+ * @returns JSX.Element
+ */
+export const ReactMdRenderer = (opts: ReactMdRendererOpts) => {
+  const _opts = {
+    ...opts,
+    options: {
+      ...opts.options,
+      overrides: {
+        ...defaultOpts.overrides,
+        ...opts.options?.overrides,
+      },
+    } as MarkdownToJSX.Options,
+  };
+
+  return <ReactMarkdown {..._opts} />;
+};
