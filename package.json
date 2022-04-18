@@ -1,7 +1,7 @@
 {
   "name": "react-md-renderer",
   "description": "Simple batteries included rendering library for markdown files.",
-  "version": "0.0.2-alpha.1",
+  "version": "0.0.2-alpha.2",
   "author": "Andrew Moss",
   "license": "MIT",
   "sideEffects": false,
