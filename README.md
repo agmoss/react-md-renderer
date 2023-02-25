@@ -9,24 +9,10 @@
 - :art: **Syntax Highlighting** - _Powered by [react-syntax-highlighter](https://www.npmjs.com/package/react-syntax-highlighter)_
 - :book: **Semantic** - _Meaningful html tags representing your content_
 
-## Installation
-
-#### With yarn
-
-```sh
-yarn add react-md-renderer
-```
-
-#### With NPM
-
-```sh
-npm install react-md-renderer
-```
-
 ## Getting Started
 
 ```jsx
-import { ReactMdRenderer } from 'react-md-renderer';
+import { ReactMdRenderer } from 'react-md-renderer/v5';
 
 const MyComponent = () => {
   const options = {
@@ -58,3 +44,15 @@ const MyComponent = () => {
 ## Docs
 
 This component is essentially a custom config of `markdown-to-jsx`. It shares the same API so check out the `markdown-to-jsx` [docs](https://probablyup.com/markdown-to-jsx/) for options.
+
+### With `@material-ui/core`
+
+```jsx
+import { ReactMdRenderer } from 'react-md-renderer/v4';
+```
+
+### With `@mui/material`
+
+```jsx
+import { ReactMdRenderer } from 'react-md-renderer/v5';
+```
