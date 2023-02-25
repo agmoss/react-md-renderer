@@ -15,16 +15,16 @@
   "typesVersions": {
     "*": {
       "v4": [
-        "src/v4/index.ts"
+        "dist/v4/index.d.ts"
       ],
       "v5": [
-        "src/v5/index.ts"
+        "dist/v5/index.d.ts"
       ]
     }
   },
   "exports": {
-    "./v4": "./src/v4/index.ts",
-    "./v5": "./src/v5/index.ts"
+    "./v4": "./dist/v4/index.js",
+    "./v5": "./dist/v5/index.js"
   },
   "scripts": {
     "build": "tsc",
