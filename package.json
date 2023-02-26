@@ -24,8 +24,12 @@
   },
   "exports": {
     "./v4": "./dist/v4/index.js",
-    "./v5": "./dist/v5/index.js"
+    "./v5": "./dist/v5/index.js",
+    "./package.json": "./package.json"
   },
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "build": "tsc",
     "prepare": "yarn run build"
