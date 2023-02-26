@@ -1,7 +1,6 @@
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import ReactMarkdown, { MarkdownToJSX } from 'markdown-to-jsx';
-import SyntaxHighlighter from 'react-syntax-highlighter';
 import React from 'react';
 
 const defaultOpts = {
@@ -38,18 +37,6 @@ const defaultOpts = {
       props: { paragraph: true, variant: 'body1' },
     },
     a: { component: Link, props: { variant: 'body1' } },
-    code: {
-      component: SyntaxHighlighter,
-      props: {
-        customStyle: {
-          display: 'inline',
-          background: 'transparent',
-          padding: '1.5px',
-          // color: '#474242',
-        },
-        wrapLongLines: true,
-      },
-    },
     img: {
       props: {
         style: {
