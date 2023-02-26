@@ -1,6 +1,6 @@
 {
   "name": "react-md-renderer",
-  "version": "1.0.1-0",
+  "version": "1.0.2-0",
   "description": "Simple batteries included rendering library for markdown files.",
   "keywords": [
     "react",
