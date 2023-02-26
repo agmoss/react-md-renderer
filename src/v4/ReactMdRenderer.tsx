@@ -45,7 +45,7 @@ const defaultOpts = {
           display: 'inline',
           background: 'transparent',
           padding: '1.5px',
-          color: '#474242',
+          // color: '#474242',
         },
         wrapLongLines: true,
       },
